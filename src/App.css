@@ -74,18 +74,71 @@ nav a:hover {
   color: #007bff;
 }
 
+
+
 /* Home */
 .home {
-  text-align: center;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #007bff, #00c6ff);
-  color: white;
-  padding: 100px 20px;
 }
 
-.home h1 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
+.hero-container {
+  max-width: 900px;
+  text-align: center;
 }
+
+.intro {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.role {
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.description {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 15px auto;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.primary-btn {
+  background: white;
+  color: #007bff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.secondary-btn {
+  border: 2px solid white;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+
 
 /* Footer */
 footer {

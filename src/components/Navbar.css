@@ -84,3 +84,76 @@ input:checked + .slider::before {
   color: #66b2ff;
   text-shadow: 0 0 5px #66b2ff;
 }
+
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE STYLES */
+@media screen and (max-width: 768px) {
+
+  /* show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* hide normal layout on mobile */
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 250px;
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 15px;
+    z-index: 1000;
+  }
+
+  /* show menu when active */
+  .nav-list.active {
+    display: flex;
+  }
+
+  /* make links easier to tap */
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-icon {
+    font-size: 14px;
+  }
+
+  .toggle-switch {
+    transform: scale(0.9);
+  }
+
+    .nav-list {
+    background: white;
+    color: black;
+  }
+
+  .dark .nav-list {
+    background: #111;
+    color: white;
+  }
+
+  .nav-list a {
+    color: inherit;
+  }
+}
