@@ -52,7 +52,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
           <li>
             <a
-              href="/Ntsako_Ndumiso_cv.pdf"
+              href={`${process.env.PUBLIC_URL}/Ntsako_Ndumiso_cv.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="nav-icon"
